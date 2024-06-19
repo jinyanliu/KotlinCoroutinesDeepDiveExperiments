@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2g48v3TQZcAF6Wmk1kMCXcKZo1o" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build KotlinCoroutineDeepDive.executor": "Run",
+    "Kotlin.AsyncExceptionKt.executor": "Run",
+    "Kotlin.CancellingKt.executor": "Run",
+    "Kotlin.CoroutineBuildersKt.executor": "Run",
+    "Kotlin.CoroutineExceptionHandlerKt.executor": "Run",
+    "Kotlin.CoroutineScopeFunctionsKt.executor": "Run",
+    "Kotlin.CoroutineScopeKt.executor": "Run",
+    "Kotlin.DefaultDispatcherKt.executor": "Run",
+    "Kotlin.DiapatchersMainKt.executor": "Run",
+    "Kotlin.IODispatcherKt.executor": "Run",
+    "Kotlin.IndependentScopeKt.executor": "Run",
+    "Kotlin.InvokeOnCompletionKt.executor": "Run",
+    "Kotlin.JobFactoryFunctionKt.executor": "Run",
+    "Kotlin.JobKt.executor": "Run",
+    "Kotlin.JustOneMoreCallKt.executor": "Run",
+    "Kotlin.LimitedParallelismKt.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "Kotlin.ParentJobKt.executor": "Run",
+    "Kotlin.SharedStateKt.executor": "Run",
+    "Kotlin.StoppingTheUnstoppableKt.executor": "Run",
+    "Kotlin.SupervisorJobKt.executor": "Run",
+    "Kotlin.TryCatchCoroutinesKt.executor": "Run",
+    "Kotlin.UnconfinedDispatcherKt.executor": "Run",
+    "Kotlin.WithContextKt.executor": "Run",
+    "Kotlin.WithTimeoutKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jinyanliu/Documents/git-repos/KotlinCoroutineDeepDive/KotlinCoroutineDeepDive/src/main/kotlin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.UnconfinedDispatcherKt">
+    <configuration name="JustOneMoreCallKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JustOneMoreCallKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LimitedParallelismKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.LimitedParallelismKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SharedStateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedStateKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoppingTheUnstoppableKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.StoppingTheUnstoppableKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnconfinedDispatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.UnconfinedDispatcherKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.UnconfinedDispatcherKt" />
+        <item itemvalue="Kotlin.LimitedParallelismKt" />
+        <item itemvalue="Kotlin.StoppingTheUnstoppableKt" />
+        <item itemvalue="Kotlin.JustOneMoreCallKt" />
+        <item itemvalue="Kotlin.SharedStateKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="" />
+      <created>1714945718852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714945718852</updated>
+      <workItem from="1714945720077" duration="139000" />
+      <workItem from="1714945876091" duration="1858000" />
+      <workItem from="1715871966499" duration="1511000" />
+      <workItem from="1716390992369" duration="3294000" />
+      <workItem from="1716844553182" duration="222000" />
+      <workItem from="1716844780162" duration="179000" />
+      <workItem from="1716844963402" duration="49149000" />
+      <workItem from="1718310890970" duration="72000" />
+      <workItem from="1718310967772" duration="2109000" />
+      <workItem from="1718654616628" duration="11939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt</url>
+          <line>6</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
