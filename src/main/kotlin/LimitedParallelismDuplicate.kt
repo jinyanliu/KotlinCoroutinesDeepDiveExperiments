@@ -1,44 +1,39 @@
 package org.example
 
 import kotlinx.coroutines.*
-import kotlinx.coroutines.test.setMain
-import kotlin.math.pow
 import kotlin.time.measureTime
 
 suspend fun main(): Unit {
-    defaultDispatcher()
+    //defaultDispatcher()
     //defaultDispatcherOne()
     //mainThread()
     //ioThread()
-    //unConfined()
+    //unconfined()
     //runBlockingThread()
+    ioStartsRunBlocking()
 }
 
-//105.005459ms
+//98.563209ms
 private suspend fun defaultDispatcher() {
     println(Thread.currentThread().name)
-    println(
-        measureTime {
-            coroutineScope {
-                withContext(Dispatchers.Default) {
-                    for (index in 1..1000) {
-                        launch {
-                            println(Thread.currentThread().name)
-                            List(1000) { 1 }.maxOrNull()
-                            //for (i in 0..10_000) 2f.pow(i)
-                            //val threadName = Thread.currentThread().name
-                            //println("Step $index running on thread: $threadName")
-                        }
+    println(measureTime {
+        coroutineScope {
+            withContext(Dispatchers.Default) {
+                for (index in 1..1000) {
+                    launch {
+                        println(Thread.currentThread().name)
+                        List(1000) { 1 }.maxOrNull()
                     }
                 }
             }
         }
-    )
+    })
 }
 
-//50.189875ms
+//53.522500ms
 @OptIn(ExperimentalCoroutinesApi::class)
 private suspend fun defaultDispatcherOne() {
+    println(Thread.currentThread().name)
     println(
         measureTime {
             coroutineScope {
@@ -47,9 +42,6 @@ private suspend fun defaultDispatcherOne() {
                         launch {
                             println(Thread.currentThread().name)
                             List(1000) { 1 }.maxOrNull()
-                            //for (i in 0..10_000) 2f.pow(i)
-                            //val threadName = Thread.currentThread().name
-                            //println("Step $index running on thread: $threadName")
                         }
                     }
                 }
@@ -58,10 +50,9 @@ private suspend fun defaultDispatcherOne() {
     )
 }
 
-//94.752750ms
+//88.533792ms
 private suspend fun mainThread() {
     println(Thread.currentThread().name)
-
     println(
         measureTime {
             coroutineScope {
@@ -69,9 +60,6 @@ private suspend fun mainThread() {
                     launch {
                         println(Thread.currentThread().name)
                         List(1000) { 1 }.maxOrNull()
-                        //for (i in 0..10_000) 2f.pow(i)
-                        //val threadName = Thread.currentThread().name
-                        //println("Step $index running on thread: $threadName")
                     }
                 }
             }
@@ -79,11 +67,12 @@ private suspend fun mainThread() {
     )
 }
 
-//62.742875ms
+//57.470417ms
 private suspend fun ioThread() {
+    println(Thread.currentThread().name)
     coroutineScope {
         withContext(Dispatchers.IO) {
-            //println(Thread.currentThread().name)
+            println(Thread.currentThread().name)
             println(
                 measureTime {
                     coroutineScope {
@@ -91,9 +80,6 @@ private suspend fun ioThread() {
                             launch {
                                 println(Thread.currentThread().name)
                                 List(1000) { 1 }.maxOrNull()
-                                //for (i in 0..10_000) 2f.pow(i)
-                                //val threadName = Thread.currentThread().name
-                                //println("Step $index running on thread: $threadName")
                             }
                         }
                     }
@@ -103,11 +89,11 @@ private suspend fun ioThread() {
     }
 }
 
-//43.635041ms
+//48.182875ms
 private suspend fun unconfined() {
     coroutineScope {
         withContext(Dispatchers.Unconfined) {
-            //println(Thread.currentThread().name)
+            println(Thread.currentThread().name)
             println(
                 measureTime {
                     coroutineScope {
@@ -115,9 +101,6 @@ private suspend fun unconfined() {
                             launch {
                                 println(Thread.currentThread().name)
                                 List(1000) { 1 }.maxOrNull()
-                                //for (i in 0..10_000) 2f.pow(i)
-                                //val threadName = Thread.currentThread().name
-                                //println("Step $index running on thread: $threadName")
                             }
                         }
                     }
@@ -127,9 +110,9 @@ private suspend fun unconfined() {
     }
 }
 
-private suspend fun runBlockingThread() {
+//54.907334ms
+private fun runBlockingThread() {
     println(Thread.currentThread().name)
-
     println(
         measureTime {
             runBlocking {
@@ -137,13 +120,32 @@ private suspend fun runBlockingThread() {
                     launch {
                         println(Thread.currentThread().name)
                         List(1000) { 1 }.maxOrNull()
-                        //for (i in 0..10_000) 2f.pow(i)
-                        //val threadName = Thread.currentThread().name
-                        //println("Step $index running on thread: $threadName")
                     }
                 }
             }
         }
     )
 }
+
+private suspend fun ioStartsRunBlocking() {
+    println(Thread.currentThread().name)
+    coroutineScope {
+        withContext(Dispatchers.IO) {
+            println(Thread.currentThread().name)
+            println(
+                measureTime {
+                    runBlocking {
+                        for (index in 1..1000) {
+                            launch {
+                                println(Thread.currentThread().name)
+                                List(1000) { 1 }.maxOrNull()
+                            }
+                        }
+                    }
+                }
+            )
+        }
+    }
+}
+
 

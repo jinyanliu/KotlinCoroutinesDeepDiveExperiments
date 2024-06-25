@@ -6,29 +6,36 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 
-suspend fun main() = coroutineScope {
-    val semaphore = Semaphore(2)
+suspend fun main() {
+    withRepository()
+    //directCall()
+}
 
-    /*repeat(5){
+private suspend fun directCall() = coroutineScope {
+    val semaphore = Semaphore(2)
+    repeat(5){
         launch {
             semaphore.withPermit {
                 delay(1000)
                 println(it)
             }
         }
-    }*/
+    }
+}
 
-    repeat(16){
+private suspend fun withRepository() = coroutineScope {
+    val repository = SomeRepository()
+    repeat(20) {
         launch {
-            LimitedNetworkUserRepository().requestUser(it)
+            repository.request(it)
         }
     }
 }
 
-class LimitedNetworkUserRepository{
+class SomeRepository{
     private val semaphore = Semaphore(2)
 
-    suspend fun requestUser(userId: Int) =
+    suspend fun request(userId: Int) =
         semaphore.withPermit {
             delay(1000)
             println(userId)

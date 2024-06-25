@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/setMain.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SharedState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SharedState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StoppingTheUnstoppable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StoppingTheUnstoppable.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -60,10 +73,13 @@
     "Kotlin.JobFactoryFunctionKt.executor": "Run",
     "Kotlin.JobKt.executor": "Run",
     "Kotlin.JustOneMoreCallKt.executor": "Run",
+    "Kotlin.LimitedParallelismDuplicateKt.executor": "Run",
     "Kotlin.LimitedParallelismKt.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.ParentJobKt.executor": "Run",
+    "Kotlin.SetMainKt.executor": "Run",
     "Kotlin.SharedStateKt.executor": "Run",
+    "Kotlin.StandardTestDispatcherKt.executor": "Run",
     "Kotlin.StoppingTheUnstoppableKt.executor": "Run",
     "Kotlin.SupervisorJobKt.executor": "Run",
     "Kotlin.TryCatchCoroutinesKt.executor": "Run",
@@ -72,6 +88,8 @@
     "Kotlin.WithTimeoutKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/jinyanliu/Documents/git-repos/KotlinCoroutineDeepDive/KotlinCoroutineDeepDive/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
@@ -87,9 +105,9 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.UnconfinedDispatcherKt">
-    <configuration name="JustOneMoreCallKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.JustOneMoreCallKt" />
+  <component name="RunManager" selected="Kotlin.StandardTestDispatcherKt">
+    <configuration name="LimitedParallelismDuplicateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.LimitedParallelismDuplicateKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,8 +120,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedStateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SharedStateKt" />
+    <configuration name="SetMainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SetMainKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandardTestDispatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.test.StandardTestDispatcherKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,20 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnconfinedDispatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.UnconfinedDispatcherKt" />
-      <module name="KotlinCoroutineDeepDive.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.UnconfinedDispatcherKt" />
-        <item itemvalue="Kotlin.LimitedParallelismKt" />
+        <item itemvalue="Kotlin.StandardTestDispatcherKt" />
         <item itemvalue="Kotlin.StoppingTheUnstoppableKt" />
-        <item itemvalue="Kotlin.JustOneMoreCallKt" />
-        <item itemvalue="Kotlin.SharedStateKt" />
+        <item itemvalue="Kotlin.LimitedParallelismDuplicateKt" />
+        <item itemvalue="Kotlin.LimitedParallelismKt" />
+        <item itemvalue="Kotlin.SetMainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -150,19 +168,30 @@
       <workItem from="1716844963402" duration="49149000" />
       <workItem from="1718310890970" duration="72000" />
       <workItem from="1718310967772" duration="2109000" />
-      <workItem from="1718654616628" duration="11939000" />
+      <workItem from="1718654616628" duration="33508000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt</url>
-          <line>6</line>
+          <line>7</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
