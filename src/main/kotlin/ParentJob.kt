@@ -16,6 +16,7 @@ fun main():Unit = runBlocking {
     println(job == parentJob)
 
     launch(name + parentJob){
+        currentCoroutineContext()
         delay(1000)
         val childName = coroutineContext[CoroutineName]
         println(childName == name)

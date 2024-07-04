@@ -1,16 +1,18 @@
 package org.example
 
 import kotlinx.coroutines.*
+import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.time.measureTime
 
 suspend fun main(): Unit {
     //defaultDispatcher()
     //defaultDispatcherOne()
     //mainThread()
+    emptyCoroutineContext()
     //ioThread()
     //unconfined()
     //runBlockingThread()
-    ioStartsRunBlocking()
+    //ioStartsRunBlocking()
 }
 
 //98.563209ms
@@ -60,6 +62,25 @@ private suspend fun mainThread() {
                     launch {
                         println(Thread.currentThread().name)
                         List(1000) { 1 }.maxOrNull()
+                    }
+                }
+            }
+        }
+    )
+}
+
+//85.262625ms
+private suspend fun emptyCoroutineContext() {
+    println(Thread.currentThread().name)
+    println(
+        measureTime {
+            coroutineScope {
+                withContext(EmptyCoroutineContext) {
+                    for (index in 1..1000) {
+                        launch {
+                            println(Thread.currentThread().name)
+                            List(1000) { 1 }.maxOrNull()
+                        }
                     }
                 }
             }

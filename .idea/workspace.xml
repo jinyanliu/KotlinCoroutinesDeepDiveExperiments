@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/setMain.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240625">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Channel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FanOut.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OnUndeliveredElement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/CorouinteScopeBlocking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/CurrentCoroutineContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/UnconfinedTestDispatcher.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/mapAsync.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/runBlockingBlocking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Experiment1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Experiment2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/TestCase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SharedState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SharedState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StoppingTheUnstoppable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StoppingTheUnstoppable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ParentJob.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ParentJob.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +36,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -40,6 +51,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -58,15 +70,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Build KotlinCoroutineDeepDive.executor": "Run",
+    "Gradle.Experiment1.test1.executor": "Run",
+    "Gradle.Experiment1.test2.executor": "Run",
+    "Gradle.Experiment1.test3.executor": "Run",
+    "Gradle.Experiment1.test4.executor": "Run",
+    "Gradle.Experiment1.test5.executor": "Run",
+    "Gradle.Experiment1.test6.executor": "Run",
+    "Gradle.Experiment1.testRunBlocking.executor": "Run",
+    "Gradle.Experiment1.testRunBlockingTest.executor": "Run",
+    "Gradle.Experiment1.testRunTestUTD.executor": "Run",
+    "Gradle.Experiment2.executor": "Run",
+    "Gradle.Experiment2.test2.executor": "Run",
+    "Gradle.Experiment2.test3.executor": "Run",
+    "Gradle.Experiment2.test4.executor": "Run",
+    "Gradle.Experiment2.test5.executor": "Run",
+    "Gradle.Experiment2.test6.executor": "Run",
+    "Gradle.TestTest.executor": "Run",
+    "Gradle.TestTest.should increment counter.executor": "Run",
+    "Gradle.TestTest.should map async and keep elements order.executor": "Run",
+    "Gradle.TestTest.should support context propagation.executor": "Run",
+    "Gradle.TestTest.test1.executor": "Run",
+    "Gradle.TestTest.test2.executor": "Run",
+    "Gradle.TestTest.test3.executor": "Run",
+    "Gradle.TestTest.test4.executor": "Run",
+    "Gradle.TestTest.test5.executor": "Run",
+    "Gradle.TestTest.test6.executor": "Run",
     "Kotlin.AsyncExceptionKt.executor": "Run",
     "Kotlin.CancellingKt.executor": "Run",
+    "Kotlin.ChannelKt.executor": "Run",
+    "Kotlin.CorouinteScopeBlockingKt.executor": "Run",
     "Kotlin.CoroutineBuildersKt.executor": "Run",
     "Kotlin.CoroutineExceptionHandlerKt.executor": "Run",
     "Kotlin.CoroutineScopeFunctionsKt.executor": "Run",
     "Kotlin.CoroutineScopeKt.executor": "Run",
+    "Kotlin.CurrentCoroutineContextKt.executor": "Run",
     "Kotlin.DefaultDispatcherKt.executor": "Run",
     "Kotlin.DiapatchersMainKt.executor": "Run",
+    "Kotlin.FanOutKt.executor": "Run",
     "Kotlin.IODispatcherKt.executor": "Run",
     "Kotlin.IndependentScopeKt.executor": "Run",
     "Kotlin.InvokeOnCompletionKt.executor": "Run",
@@ -76,7 +118,9 @@
     "Kotlin.LimitedParallelismDuplicateKt.executor": "Run",
     "Kotlin.LimitedParallelismKt.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Kotlin.MapAsyncKt.executor": "Run",
     "Kotlin.ParentJobKt.executor": "Run",
+    "Kotlin.RunBlockingBlockingKt.executor": "Run",
     "Kotlin.SetMainKt.executor": "Run",
     "Kotlin.SharedStateKt.executor": "Run",
     "Kotlin.StandardTestDispatcherKt.executor": "Run",
@@ -84,11 +128,17 @@
     "Kotlin.SupervisorJobKt.executor": "Run",
     "Kotlin.TryCatchCoroutinesKt.executor": "Run",
     "Kotlin.UnconfinedDispatcherKt.executor": "Run",
+    "Kotlin.UnconfinedTestDispatcherKt.executor": "Run",
     "Kotlin.WithContextKt.executor": "Run",
     "Kotlin.WithTimeoutKt.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.TestTest.executor": "Run",
+    "TestNG.TestTest.test1.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/jinyanliu/Documents/git-repos/KotlinCoroutineDeepDive/KotlinCoroutineDeepDive/src/main/kotlin",
@@ -97,6 +147,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,9 +158,40 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.StandardTestDispatcherKt">
-    <configuration name="LimitedParallelismDuplicateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LimitedParallelismDuplicateKt" />
+  <component name="RunManager" selected="Kotlin.FanOutKt">
+    <configuration name="Experiment1.testRunTestUTD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.test.Experiment1.testRunTestUTD&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChannelKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ChannelKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FanOutKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FanOutKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,22 +204,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetMainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SetMainKt" />
-      <module name="KotlinCoroutineDeepDive.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StandardTestDispatcherKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.test.StandardTestDispatcherKt" />
-      <module name="KotlinCoroutineDeepDive.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StoppingTheUnstoppableKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.StoppingTheUnstoppableKt" />
+    <configuration name="RunBlockingBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.test.RunBlockingBlockingKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.StandardTestDispatcherKt" />
-        <item itemvalue="Kotlin.StoppingTheUnstoppableKt" />
-        <item itemvalue="Kotlin.LimitedParallelismDuplicateKt" />
+        <item itemvalue="Kotlin.FanOutKt" />
+        <item itemvalue="Kotlin.ChannelKt" />
         <item itemvalue="Kotlin.LimitedParallelismKt" />
-        <item itemvalue="Kotlin.SetMainKt" />
+        <item itemvalue="Kotlin.RunBlockingBlockingKt" />
+        <item itemvalue="Gradle.Experiment1.testRunTestUTD" />
       </list>
     </recent_temporary>
   </component>
@@ -168,8 +238,18 @@
       <workItem from="1716844963402" duration="49149000" />
       <workItem from="1718310890970" duration="72000" />
       <workItem from="1718310967772" duration="2109000" />
-      <workItem from="1718654616628" duration="33508000" />
+      <workItem from="1718654616628" duration="48526000" />
+      <workItem from="1719491047311" duration="22124000" />
     </task>
+    <task id="LOCAL-00001" summary="20240625">
+      <option name="closed" value="true" />
+      <created>1719314597530</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719314597530</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,12 +266,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20240625" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240625" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt</url>
-          <line>7</line>
+          <line>8</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

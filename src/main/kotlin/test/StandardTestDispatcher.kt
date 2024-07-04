@@ -1,18 +1,19 @@
 package org.example.test
 
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 import kotlinx.coroutines.test.StandardTestDispatcher
+import kotlin.random.Random
+import kotlin.system.measureTimeMillis
+import kotlin.time.measureTime
 
 fun main() {
-    //launching()
+    launching()
     //blocking()
-    advanceTimeBy()
+    //advanceTimeBy()
+    //usingThread()
 }
 
-fun launching() {
+fun launching() =println(measureTime{
     val testDispatcher = StandardTestDispatcher()
     CoroutineScope(testDispatcher).launch {
         println("Starting delay")
@@ -20,7 +21,7 @@ fun launching() {
         println("Ending delay")
     }
     testDispatcher.scheduler.advanceUntilIdle()
-}
+})
 
 fun blocking() {
     val testDispatcher = StandardTestDispatcher()
@@ -32,7 +33,7 @@ fun blocking() {
     testDispatcher.scheduler.advanceUntilIdle()
 }
 
-fun advanceTimeBy(){
+fun advanceTimeBy()= println(measureTime {
     val testDispatcher = StandardTestDispatcher()
     CoroutineScope(testDispatcher).launch {
         delay(2)
@@ -47,9 +48,34 @@ fun advanceTimeBy(){
         print("Done3")
     }
 
-    for(i in 1..5){
+    Thread.sleep(2000)
+
+    for (i in 1..5) {
         println(".")
         testDispatcher.scheduler.advanceTimeBy(1)
         testDispatcher.scheduler.runCurrent()
     }
-}
+
+    Thread.sleep(2000)
+})
+
+@OptIn(ExperimentalCoroutinesApi::class)
+fun usingThread() = println(measureTime {
+    val dispatcher = StandardTestDispatcher()
+
+    CoroutineScope(dispatcher).launch {
+        delay(1000)
+        println("Coroutine done")
+    }
+
+    Thread.sleep(2000)
+
+    val time = measureTime {
+        println("[${dispatcher.scheduler.currentTime}] Before")
+        dispatcher.scheduler.advanceUntilIdle()
+        println("[${dispatcher.scheduler.currentTime}] After")
+    }
+
+    Thread.sleep(2000)
+    println("Took $time")
+})
