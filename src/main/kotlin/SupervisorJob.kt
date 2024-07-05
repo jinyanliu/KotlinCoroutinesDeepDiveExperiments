@@ -28,7 +28,7 @@ suspend fun main98766(): Unit = coroutineScope {
     delay(3000)
 }
 
-fun main(): Unit = runBlocking {
+fun main3434(): Unit = runBlocking {
     supervisorScope {
         launch {
             delay(1000)
@@ -95,4 +95,18 @@ suspend fun main67867865765(): Unit = coroutineScope {
     //
     println("Cancelled successfully")
     delay(1000)
+}
+
+fun main(): Unit = runBlocking {
+    val scope = CoroutineScope(SupervisorJob())
+    scope.launch {
+        delay(1000)
+        println("Will not be printed")
+    }
+    scope.launch {
+        delay(2000)
+        println("Will be printed")
+    }
+    delay(100)
+    scope.cancel()
 }

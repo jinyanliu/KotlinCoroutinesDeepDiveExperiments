@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240625">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Channel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FanOut.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OnUndeliveredElement.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/CorouinteScopeBlocking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/CurrentCoroutineContext.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/UnconfinedTestDispatcher.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/mapAsync.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/test/runBlockingBlocking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Experiment1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Experiment2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/TestCase.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240704">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Select.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SelectingFromChannel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SelectingOnSend.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelism.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/LimitedParallelismDuplicate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ParentJob.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ParentJob.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test/StandardTestDispatcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SupervisorJob.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SupervisorJob.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +107,12 @@
     "Kotlin.LimitedParallelismKt.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.MapAsyncKt.executor": "Run",
+    "Kotlin.OnUndeliveredElementKt.executor": "Run",
     "Kotlin.ParentJobKt.executor": "Run",
     "Kotlin.RunBlockingBlockingKt.executor": "Run",
+    "Kotlin.SelectKt.executor": "Run",
+    "Kotlin.SelectingFromChannelKt.executor": "Run",
+    "Kotlin.SelectingOnSendKt.executor": "Run",
     "Kotlin.SetMainKt.executor": "Run",
     "Kotlin.SharedStateKt.executor": "Run",
     "Kotlin.StandardTestDispatcherKt.executor": "Run",
@@ -158,54 +150,37 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FanOutKt">
-    <configuration name="Experiment1.testRunTestUTD" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.test.Experiment1.testRunTestUTD&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ChannelKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ChannelKt" />
+  <component name="RunManager" selected="Kotlin.SelectingOnSendKt">
+    <configuration name="OnUndeliveredElementKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.OnUndeliveredElementKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FanOutKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.FanOutKt" />
+    <configuration name="SelectKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LimitedParallelismKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LimitedParallelismKt" />
+    <configuration name="SelectingFromChannelKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectingFromChannelKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunBlockingBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.test.RunBlockingBlockingKt" />
+    <configuration name="SelectingOnSendKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SelectingOnSendKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupervisorJobKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SupervisorJobKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.FanOutKt" />
-        <item itemvalue="Kotlin.ChannelKt" />
-        <item itemvalue="Kotlin.LimitedParallelismKt" />
-        <item itemvalue="Kotlin.RunBlockingBlockingKt" />
-        <item itemvalue="Gradle.Experiment1.testRunTestUTD" />
+        <item itemvalue="Kotlin.SelectingOnSendKt" />
+        <item itemvalue="Kotlin.SelectingFromChannelKt" />
+        <item itemvalue="Kotlin.SelectKt" />
+        <item itemvalue="Kotlin.SupervisorJobKt" />
+        <item itemvalue="Kotlin.OnUndeliveredElementKt" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +214,7 @@
       <workItem from="1718310890970" duration="72000" />
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
-      <workItem from="1719491047311" duration="22124000" />
+      <workItem from="1719491047311" duration="30619000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -249,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719314597530</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20240704">
+      <option name="closed" value="true" />
+      <created>1720097144300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720097144300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +251,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20240625" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240625" />
+    <MESSAGE value="20240704" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240704" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
