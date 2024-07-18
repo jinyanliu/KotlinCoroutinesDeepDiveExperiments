@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240704">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Select.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SelectingFromChannel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SelectingOnSend.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240705">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ColdSequence.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowAndSharedState.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowBuilding.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowCollector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowIntermediateOperations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowPrecessing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HotAndColdDataSources.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HotChannelsColdFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UnderstandingFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/getSequence.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SupervisorJob.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SupervisorJob.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +94,7 @@
     "Kotlin.AsyncExceptionKt.executor": "Run",
     "Kotlin.CancellingKt.executor": "Run",
     "Kotlin.ChannelKt.executor": "Run",
+    "Kotlin.ColdSequenceKt.executor": "Run",
     "Kotlin.CorouinteScopeBlockingKt.executor": "Run",
     "Kotlin.CoroutineBuildersKt.executor": "Run",
     "Kotlin.CoroutineExceptionHandlerKt.executor": "Run",
@@ -97,6 +104,14 @@
     "Kotlin.DefaultDispatcherKt.executor": "Run",
     "Kotlin.DiapatchersMainKt.executor": "Run",
     "Kotlin.FanOutKt.executor": "Run",
+    "Kotlin.FlowAndSharedStateKt.executor": "Run",
+    "Kotlin.FlowBuildingKt.executor": "Run",
+    "Kotlin.FlowCollectorKt.executor": "Run",
+    "Kotlin.FlowIntermediateOperationsKt.executor": "Run",
+    "Kotlin.FlowPrecessingKt.executor": "Run",
+    "Kotlin.GetSequenceKt.executor": "Run",
+    "Kotlin.HotAndColdDataSourcesKt.executor": "Run",
+    "Kotlin.HotChannelsColdFlowKt.executor": "Run",
     "Kotlin.IODispatcherKt.executor": "Run",
     "Kotlin.IndependentScopeKt.executor": "Run",
     "Kotlin.InvokeOnCompletionKt.executor": "Run",
@@ -121,6 +136,7 @@
     "Kotlin.TryCatchCoroutinesKt.executor": "Run",
     "Kotlin.UnconfinedDispatcherKt.executor": "Run",
     "Kotlin.UnconfinedTestDispatcherKt.executor": "Run",
+    "Kotlin.UnderstandingFlowKt.executor": "Run",
     "Kotlin.WithContextKt.executor": "Run",
     "Kotlin.WithTimeoutKt.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -132,6 +148,7 @@
     "TestNG.TestTest.executor": "Run",
     "TestNG.TestTest.test1.executor": "Run",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "zulu-17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/jinyanliu/Documents/git-repos/KotlinCoroutineDeepDive/KotlinCoroutineDeepDive/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
@@ -149,38 +166,41 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.SelectingOnSendKt">
-    <configuration name="OnUndeliveredElementKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.OnUndeliveredElementKt" />
+  <component name="RunManager" selected="Kotlin.FlowBuildingKt">
+    <configuration name="FlowAndSharedStateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FlowAndSharedStateKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SelectKt" />
+    <configuration name="FlowBuildingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FlowBuildingKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectingFromChannelKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SelectingFromChannelKt" />
+    <configuration name="FlowCollectorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FlowCollectorKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectingOnSendKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SelectingOnSendKt" />
+    <configuration name="FlowPrecessingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FlowPrecessingKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupervisorJobKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SupervisorJobKt" />
+    <configuration name="UnderstandingFlowKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.UnderstandingFlowKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.SelectingOnSendKt" />
-        <item itemvalue="Kotlin.SelectingFromChannelKt" />
-        <item itemvalue="Kotlin.SelectKt" />
-        <item itemvalue="Kotlin.SupervisorJobKt" />
-        <item itemvalue="Kotlin.OnUndeliveredElementKt" />
+        <item itemvalue="Kotlin.FlowBuildingKt" />
+        <item itemvalue="Kotlin.FlowAndSharedStateKt" />
+        <item itemvalue="Kotlin.FlowPrecessingKt" />
+        <item itemvalue="Kotlin.FlowCollectorKt" />
+        <item itemvalue="Kotlin.UnderstandingFlowKt" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +234,8 @@
       <workItem from="1718310890970" duration="72000" />
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
-      <workItem from="1719491047311" duration="30619000" />
+      <workItem from="1719491047311" duration="31710000" />
+      <workItem from="1720648013055" duration="22355000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -232,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720097144300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20240705">
+      <option name="closed" value="true" />
+      <created>1720189752427</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720189752427</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +281,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20240625" />
     <MESSAGE value="20240704" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240704" />
+    <MESSAGE value="20240705" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240705" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
