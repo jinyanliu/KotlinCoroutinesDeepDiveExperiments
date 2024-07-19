@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240705">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ColdSequence.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowAndSharedState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowBuilding.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowCollector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowIntermediateOperations.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowPrecessing.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HotAndColdDataSources.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/HotChannelsColdFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UnderstandingFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/getSequence.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240718">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ChannelFlow.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,6 +84,7 @@
     "Gradle.TestTest.test6.executor": "Run",
     "Kotlin.AsyncExceptionKt.executor": "Run",
     "Kotlin.CancellingKt.executor": "Run",
+    "Kotlin.ChannelFlowKt.executor": "Run",
     "Kotlin.ChannelKt.executor": "Run",
     "Kotlin.ColdSequenceKt.executor": "Run",
     "Kotlin.CorouinteScopeBlockingKt.executor": "Run",
@@ -170,7 +162,14 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FlowBuildingKt">
+  <component name="RunManager" selected="Kotlin.ChannelFlowKt">
+    <configuration name="ChannelFlowKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ChannelFlowKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FlowAndSharedStateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.FlowAndSharedStateKt" />
       <module name="KotlinCoroutineDeepDive.main" />
@@ -199,20 +198,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnderstandingFlowKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.UnderstandingFlowKt" />
-      <module name="KotlinCoroutineDeepDive.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ChannelFlowKt" />
         <item itemvalue="Kotlin.FlowBuildingKt" />
         <item itemvalue="Kotlin.FlowAndSharedStateKt" />
         <item itemvalue="Kotlin.FlowPrecessingKt" />
         <item itemvalue="Kotlin.FlowCollectorKt" />
-        <item itemvalue="Kotlin.UnderstandingFlowKt" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +227,7 @@
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
       <workItem from="1719491047311" duration="31710000" />
-      <workItem from="1720648013055" duration="22355000" />
+      <workItem from="1720648013055" duration="23982000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -261,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720189752427</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20240718">
+      <option name="closed" value="true" />
+      <created>1721338489208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721338489208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +282,8 @@
     <MESSAGE value="20240625" />
     <MESSAGE value="20240704" />
     <MESSAGE value="20240705" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240705" />
+    <MESSAGE value="20240718" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240718" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
