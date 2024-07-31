@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240718">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ChannelFlow.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240719">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowCatch.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowFlatMapConcat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/FlowRetry.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SharedFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SharedFlowDelayExample.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SharedFlowLazily.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SharedFlowWhileSubscribed.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/StateFlowDelayExample.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,9 +106,13 @@
     "Kotlin.FanOutKt.executor": "Run",
     "Kotlin.FlowAndSharedStateKt.executor": "Run",
     "Kotlin.FlowBuildingKt.executor": "Run",
+    "Kotlin.FlowCatchKt.executor": "Run",
     "Kotlin.FlowCollectorKt.executor": "Run",
+    "Kotlin.FlowExceptionKt.executor": "Run",
+    "Kotlin.FlowFlatMapConcatKt.executor": "Run",
     "Kotlin.FlowIntermediateOperationsKt.executor": "Run",
     "Kotlin.FlowPrecessingKt.executor": "Run",
+    "Kotlin.FlowRetryKt.executor": "Run",
     "Kotlin.GetSequenceKt.executor": "Run",
     "Kotlin.HotAndColdDataSourcesKt.executor": "Run",
     "Kotlin.HotChannelsColdFlowKt.executor": "Run",
@@ -121,8 +133,15 @@
     "Kotlin.SelectingFromChannelKt.executor": "Run",
     "Kotlin.SelectingOnSendKt.executor": "Run",
     "Kotlin.SetMainKt.executor": "Run",
+    "Kotlin.SharedFlowDelayExampleKt.executor": "Run",
+    "Kotlin.SharedFlowKt.executor": "Run",
+    "Kotlin.SharedFlowLazilyKt.executor": "Run",
+    "Kotlin.SharedFlowWhileSubscribedKt.executor": "Run",
     "Kotlin.SharedStateKt.executor": "Run",
     "Kotlin.StandardTestDispatcherKt.executor": "Run",
+    "Kotlin.StateFlowDelayExampleKt.executor": "Run",
+    "Kotlin.StateFlowExampleKt.executor": "Run",
+    "Kotlin.StateFlowKt.executor": "Run",
     "Kotlin.StoppingTheUnstoppableKt.executor": "Run",
     "Kotlin.SupervisorJobKt.executor": "Run",
     "Kotlin.TryCatchCoroutinesKt.executor": "Run",
@@ -162,37 +181,37 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ChannelFlowKt">
-    <configuration name="ChannelFlowKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ChannelFlowKt" />
+  <component name="RunManager" selected="Kotlin.SharedFlowWhileSubscribedKt">
+    <configuration name="SharedFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowDelayExampleKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowAndSharedStateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.FlowAndSharedStateKt" />
+    <configuration name="SharedFlowKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowBuildingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.FlowBuildingKt" />
+    <configuration name="SharedFlowLazilyKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowLazilyKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowCollectorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.FlowCollectorKt" />
+    <configuration name="SharedFlowWhileSubscribedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowWhileSubscribedKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowPrecessingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.FlowPrecessingKt" />
+    <configuration name="StateFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.StateFlowDelayExampleKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ChannelFlowKt" />
-        <item itemvalue="Kotlin.FlowBuildingKt" />
-        <item itemvalue="Kotlin.FlowAndSharedStateKt" />
-        <item itemvalue="Kotlin.FlowPrecessingKt" />
-        <item itemvalue="Kotlin.FlowCollectorKt" />
+        <item itemvalue="Kotlin.SharedFlowWhileSubscribedKt" />
+        <item itemvalue="Kotlin.StateFlowDelayExampleKt" />
+        <item itemvalue="Kotlin.SharedFlowDelayExampleKt" />
+        <item itemvalue="Kotlin.SharedFlowKt" />
+        <item itemvalue="Kotlin.SharedFlowLazilyKt" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +246,7 @@
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
       <workItem from="1719491047311" duration="31710000" />
-      <workItem from="1720648013055" duration="23982000" />
+      <workItem from="1720648013055" duration="44567000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -261,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721338489208</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20240719">
+      <option name="closed" value="true" />
+      <created>1721425954155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721425954155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +310,8 @@
     <MESSAGE value="20240704" />
     <MESSAGE value="20240705" />
     <MESSAGE value="20240718" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240718" />
+    <MESSAGE value="20240719" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240719" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
