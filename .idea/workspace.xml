@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240731">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/LaunchIn.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/suspendLazy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StateFlowDelayExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StateFlowDelayExample.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240807">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SuspendLazy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendLazy.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +239,7 @@
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
       <workItem from="1719491047311" duration="31710000" />
-      <workItem from="1720648013055" duration="53545000" />
+      <workItem from="1720648013055" duration="53807000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -300,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722464238337</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="20240807">
+      <option name="closed" value="true" />
+      <created>1723028181319</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723028181319</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +329,8 @@
     <MESSAGE value="20240718" />
     <MESSAGE value="20240719" />
     <MESSAGE value="20240731" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240731" />
+    <MESSAGE value="20240807" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240807" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,19 +5,6 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlin.time.measureTime
 
-fun <T> suspendLazy2(
-    initializer: suspend () -> T
-): suspend () -> T {
-    println("suspendLazy2 is called")
-    val mutex = Mutex()
-    return {
-        mutex.withLock {
-            val holder = initializer()
-            holder
-        }
-    }
-}
-
 suspend fun main() {
     println(measureTime { getConnection() })
     println(measureTime { getConnection() })
@@ -54,3 +41,18 @@ fun <T> suspendLazy(
         }
     }
 }
+
+
+/*
+fun <T> suspendLazy2(
+    initializer: suspend () -> T
+): suspend () -> T {
+    println("suspendLazy2 is called")
+    val mutex = Mutex()
+    return {
+        mutex.withLock {
+            val holder = initializer()
+            holder
+        }
+    }
+}*/
