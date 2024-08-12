@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240807">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineDeepDive.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeExceptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Jobs.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RetryFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RunBlocking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunctions.kt" afterDir="false" />
+    <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240812">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SharedFlowDelayExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SharedFlowDelayExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StateFlowDelayExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StateFlowDelayExample.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,16 +187,9 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.JobsKt">
+  <component name="RunManager" selected="Kotlin.SharedFlowDelayExampleKt">
     <configuration name="CoroutineDeepDiveKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.CoroutineDeepDiveKt" />
-      <module name="KotlinCoroutineDeepDive.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoroutineScopeExceptionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CoroutineScopeExceptionsKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,8 +202,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuspendingFuctionsExceptionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SuspendingFuctionsExceptionsKt" />
+    <configuration name="SharedFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowDelayExampleKt" />
+      <module name="KotlinCoroutineDeepDive.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.StateFlowDelayExampleKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.SharedFlowDelayExampleKt" />
+        <item itemvalue="Kotlin.StateFlowDelayExampleKt" />
         <item itemvalue="Kotlin.JobsKt" />
         <item itemvalue="Kotlin.CoroutineDeepDiveKt" />
         <item itemvalue="Kotlin.SuspendingFunctionsKt" />
-        <item itemvalue="Kotlin.CoroutineScopeExceptionsKt" />
-        <item itemvalue="Kotlin.SuspendingFuctionsExceptionsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +252,7 @@
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
       <workItem from="1719491047311" duration="31710000" />
-      <workItem from="1720648013055" duration="71104000" />
+      <workItem from="1720648013055" duration="72963000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -331,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723028277098</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="20240812">
+      <option name="closed" value="true" />
+      <created>1723466956152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723466956152</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +359,8 @@
     <MESSAGE value="20240719" />
     <MESSAGE value="20240731" />
     <MESSAGE value="20240807" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240807" />
+    <MESSAGE value="20240812" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240812" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

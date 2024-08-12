@@ -6,8 +6,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
+//3,4
 suspend fun main(): Unit = coroutineScope {
-    main1()
+    main4()
 }
 
 //XABCDE

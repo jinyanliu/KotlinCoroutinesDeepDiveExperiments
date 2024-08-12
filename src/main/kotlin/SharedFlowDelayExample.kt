@@ -5,8 +5,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.launch
 
+//2
 suspend fun main(): Unit = coroutineScope {
-    main3()
+    main2()
 }
 
 //A emitted
@@ -50,20 +51,20 @@ private suspend fun main1(): Unit = coroutineScope {
 
 //A emitted
 //B emitted
-//A
+//first A
 //C emitted
 //Start listening
-//B
+//first B
 //D emitted
 //second C
-//C
+//first C
 //E emitted
 //second D
-//D
+//first D
 //second E
-//E
+//first E
 private suspend fun main2(): Unit = coroutineScope {
-    val mutableSharedFlow = MutableSharedFlow<Char>(replay = 0)
+    val mutableSharedFlow = MutableSharedFlow<Char>()
 
     launch {
         for (c in 'A'..'E') {
@@ -76,7 +77,7 @@ private suspend fun main2(): Unit = coroutineScope {
     launch {
         mutableSharedFlow.collect {
             delay(1000)
-            println(it)
+            println("first $it")
         }
     }
 
