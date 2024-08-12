@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8c55a2-b77d-4fab-a107-74792bab11eb" name="Changes" comment="20240807">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SuspendLazy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendLazy.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineDeepDive.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeExceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Jobs.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RetryFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RunBlocking.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineScopeFunctions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -89,7 +99,9 @@
     "Kotlin.ColdSequenceKt.executor": "Run",
     "Kotlin.CorouinteScopeBlockingKt.executor": "Run",
     "Kotlin.CoroutineBuildersKt.executor": "Run",
+    "Kotlin.CoroutineDeepDiveKt.executor": "Run",
     "Kotlin.CoroutineExceptionHandlerKt.executor": "Run",
+    "Kotlin.CoroutineScopeExceptionsKt.executor": "Run",
     "Kotlin.CoroutineScopeFunctionsKt.executor": "Run",
     "Kotlin.CoroutineScopeKt.executor": "Run",
     "Kotlin.CurrentCoroutineContextKt.executor": "Run",
@@ -113,6 +125,7 @@
     "Kotlin.InvokeOnCompletionKt.executor": "Run",
     "Kotlin.JobFactoryFunctionKt.executor": "Run",
     "Kotlin.JobKt.executor": "Run",
+    "Kotlin.JobsKt.executor": "Run",
     "Kotlin.JustOneMoreCallKt.executor": "Run",
     "Kotlin.LaunchInKt.executor": "Run",
     "Kotlin.LimitedParallelismDuplicateKt.executor": "Run",
@@ -121,7 +134,9 @@
     "Kotlin.MapAsyncKt.executor": "Run",
     "Kotlin.OnUndeliveredElementKt.executor": "Run",
     "Kotlin.ParentJobKt.executor": "Run",
+    "Kotlin.RetryFlowKt.executor": "Run",
     "Kotlin.RunBlockingBlockingKt.executor": "Run",
+    "Kotlin.RunBlockingKt.executor": "Run",
     "Kotlin.SelectKt.executor": "Run",
     "Kotlin.SelectingFromChannelKt.executor": "Run",
     "Kotlin.SelectingOnSendKt.executor": "Run",
@@ -138,6 +153,8 @@
     "Kotlin.StoppingTheUnstoppableKt.executor": "Run",
     "Kotlin.SupervisorJobKt.executor": "Run",
     "Kotlin.SuspendLazyKt.executor": "Run",
+    "Kotlin.SuspendingFuctionsExceptionsKt.executor": "Run",
+    "Kotlin.SuspendingFunctionsKt.executor": "Run",
     "Kotlin.TryCatchCoroutinesKt.executor": "Run",
     "Kotlin.UnconfinedDispatcherKt.executor": "Run",
     "Kotlin.UnconfinedTestDispatcherKt.executor": "Run",
@@ -163,6 +180,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -174,37 +192,37 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.SuspendLazyKt">
-    <configuration name="LaunchInKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LaunchInKt" />
+  <component name="RunManager" selected="Kotlin.JobsKt">
+    <configuration name="CoroutineDeepDiveKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.CoroutineDeepDiveKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowDelayExampleKt" />
+    <configuration name="CoroutineScopeExceptionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.CoroutineScopeExceptionsKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedFlowWhileSubscribedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SharedFlowWhileSubscribedKt" />
+    <configuration name="JobsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JobsKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateFlowDelayExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.StateFlowDelayExampleKt" />
+    <configuration name="SuspendingFuctionsExceptionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SuspendingFuctionsExceptionsKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuspendLazyKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SuspendLazyKt" />
+    <configuration name="SuspendingFunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SuspendingFunctionsKt" />
       <module name="KotlinCoroutineDeepDive.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.SuspendLazyKt" />
-        <item itemvalue="Kotlin.StateFlowDelayExampleKt" />
-        <item itemvalue="Kotlin.LaunchInKt" />
-        <item itemvalue="Kotlin.SharedFlowWhileSubscribedKt" />
-        <item itemvalue="Kotlin.SharedFlowDelayExampleKt" />
+        <item itemvalue="Kotlin.JobsKt" />
+        <item itemvalue="Kotlin.CoroutineDeepDiveKt" />
+        <item itemvalue="Kotlin.SuspendingFunctionsKt" />
+        <item itemvalue="Kotlin.CoroutineScopeExceptionsKt" />
+        <item itemvalue="Kotlin.SuspendingFuctionsExceptionsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +257,7 @@
       <workItem from="1718310967772" duration="2109000" />
       <workItem from="1718654616628" duration="48526000" />
       <workItem from="1719491047311" duration="31710000" />
-      <workItem from="1720648013055" duration="53807000" />
+      <workItem from="1720648013055" duration="71104000" />
     </task>
     <task id="LOCAL-00001" summary="20240625">
       <option name="closed" value="true" />
@@ -305,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723028181319</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="20240807">
+      <option name="closed" value="true" />
+      <created>1723028277098</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723028277098</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

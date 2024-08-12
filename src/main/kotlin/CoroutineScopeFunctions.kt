@@ -9,6 +9,8 @@ fun getFollowersNumber(): Int =
     throw Error("Service exception")
 
 suspend fun getUserName(): String {
+    supervisorScope {  }
+    coroutineScope {  }
     delay(500)
     return "marcinmoskala"
 }
